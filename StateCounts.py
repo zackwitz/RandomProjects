@@ -3,13 +3,15 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from time import sleep
 
+# Battleground states to watch
 states = [
     'Arizona',
     'Georgia',
     'Pennsylvania',
+    # for some reason Nevada is causing an error
     # 'Nevada'
 ]
-TIME_INTERVAL = 60  # in seconds
+TIME_INTERVAL = 60  # in seconds, change to how often you want it to update
 
 
 def check_state(state_url):
